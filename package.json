@@ -30,5 +30,8 @@
     "@web/dev-server": "^0.4.6",
     "@web/test-runner": "^0.20.1",
     "jsdoc": "^4.0.4"
+  },
+  "dependencies": {
+    "@github/webauthn-json": "^2.1.1"
   }
 }
