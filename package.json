@@ -3,7 +3,9 @@
   "version": "1.0.0",
   "description": "The JS code for the view layer of the Practical Framework",
   "exports": {
-    "./util/auto-generate-id": "./src/util/auto-generate-id.js"
+    "./util/auto-generate-id": "./src/util/auto-generate-id.js",
+    "./passkeys/handlers/authenticate": "./src/passkeys/handlers/authenticate.js",
+    "./passkeys/util/conditional-mediation-available": "./src/passkeys/util/conditional-mediation-available.js"
   },
   "scripts": {
     "start": "web-dev-server --open demo/ --node-resolve",
