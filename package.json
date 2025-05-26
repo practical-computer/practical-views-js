@@ -7,7 +7,8 @@
     "./util/auto-generate-id": "./src/util/auto-generate-id.js",
     "./passkeys/handlers/authenticate": "./src/passkeys/handlers/authenticate.js",
     "./passkeys/handlers/register": "./src/passkeys/handlers/register.js",
-    "./passkeys/util/conditional-mediation-available": "./src/passkeys/util/conditional-mediation-available.js"
+    "./passkeys/util/conditional-mediation-available": "./src/passkeys/util/conditional-mediation-available.js",
+    "./passkeys/util/get-reauthentication-token": "./src/passkeys/util/get-reauthentication-token.js"
   },
   "scripts": {
     "start": "web-dev-server --open demo/ --node-resolve",
