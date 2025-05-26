@@ -3,6 +3,7 @@
   "version": "1.0.0",
   "description": "The JS code for the view layer of the Practical Framework",
   "exports": {
+    "./handlers/json-redirection": "./src/handlers/json-redirection.js",
     "./util/auto-generate-id": "./src/util/auto-generate-id.js",
     "./passkeys/handlers/authenticate": "./src/passkeys/handlers/authenticate.js",
     "./passkeys/handlers/register": "./src/passkeys/handlers/register.js",
