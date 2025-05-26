@@ -35,6 +35,7 @@
     "jsdoc": "^4.0.4"
   },
   "dependencies": {
-    "@github/webauthn-json": "^2.1.1"
+    "@github/webauthn-json": "^2.1.1",
+    "mrujs": "^1.0.2"
   }
 }
