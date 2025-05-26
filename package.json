@@ -5,6 +5,7 @@
   "exports": {
     "./handlers/json-redirection": "./src/handlers/json-redirection.js",
     "./util/auto-generate-id": "./src/util/auto-generate-id.js",
+    "./passkeys/elements/submit-form-after-reauthentication": "./src/passkeys/elements/submit-form-after-reauthentication.js",
     "./passkeys/handlers/authenticate": "./src/passkeys/handlers/authenticate.js",
     "./passkeys/handlers/register": "./src/passkeys/handlers/register.js",
     "./passkeys/util/conditional-mediation-available": "./src/passkeys/util/conditional-mediation-available.js",
