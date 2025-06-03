@@ -3,6 +3,9 @@
   "version": "1.0.0",
   "description": "The JS code for the view layer of the Practical Framework",
   "exports": {
+    "./elements/auto-expire": "./src/elements/auto-expire.js",
+    "./elements/submit-with-selected-menu-item": "./src/elements/submit-with-selected-menu-item.js",
+    "./elements/toast-dialog": "./src/elements/toast-dialog.js",
     "./handlers/json-redirection": "./src/handlers/json-redirection.js",
     "./util/auto-generate-id": "./src/util/auto-generate-id.js",
     "./passkeys/elements/submit-form-after-reauthentication": "./src/passkeys/elements/submit-form-after-reauthentication.js",
