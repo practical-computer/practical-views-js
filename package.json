@@ -9,7 +9,6 @@
     "./handlers/json-redirection": "./src/handlers/json-redirection.js",
     "./util/auto-generate-id": "./src/util/auto-generate-id.js",
     "./util/ensure-delcarative-open-modal-dialogs-are-modal": "./src/util/ensure-delcarative-open-modal-dialogs-are-modal.js",
-    "./util/ensure-delcarative-open-modal-dialogs-are-modal": "./src/util/ensure-delcarative-open-modal-dialogs-are-modal.js",
     "./util/focus-on-ajax-success-event": "./src/util/focus-on-ajax-success-event.js",
     "./util/js-enabled-flag": "./src/util/js-enabled-flag.js",
     "./util/open-modal-dialog-on-cablecar-event": "./src/util/open-modal-dialog-on-cablecar-event.js",
