@@ -21,7 +21,16 @@ export function setColorPreference(value){
 }
 
 export function reflectColorPreference(){
-  document.firstElementChild.setAttribute(htmlDataAttributeName, getColorPreference())
+  const preference = getColorPreference()
+  const browserPrefersDark = window.matchMedia(`(prefers-color-scheme:dark)`).matches
+  const forcedDarkMode = preference == "dark"
+  const systemMatchMode = preference == "match-system" && browserPrefersDark
+
+  if(forcedDarkMode || systemMatchMode) {
+    document.firstElementChild.classList.add("wa-dark")
+  } else {
+    document.firstElementChild.classList.remove("wa-dark")
+  }
 }
 
 
