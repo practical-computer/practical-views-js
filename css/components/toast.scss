@@ -1,0 +1,15 @@
+dialog.toast {
+  margin: 0;
+  padding: 0;
+  border: none;
+  position: static;
+  box-shadow: unset;
+}
+
+toast-dialog {
+  [remaining-time-indicator] {
+    --size: 2rem;
+    --track-color: var(--wa-color-fill-normal);
+    --indicator-color: var(--wa-color-fill-loud);
+  }
+}
