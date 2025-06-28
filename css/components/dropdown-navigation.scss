@@ -5,9 +5,9 @@ wa-dropdown .dropdown-navigation {
 }
 
 .dropdown-navigation {
-  padding-block: var(--wa-space-m);
+  padding-block: var(--wa-space);
 }
 
 .dropdown-navigation > *:not(wa-divider) {
-  padding-inline: var(--wa-space-m);
+  padding-inline: var(--wa-space);
 }
