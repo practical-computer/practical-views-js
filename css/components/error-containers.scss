@@ -1,0 +1,28 @@
+wa-callout > [data-pf-error-container] > ul > li {
+  font-weight: var(--wa-font-weight-body);
+}
+
+wa-callout:has(> [data-pf-error-container]):not(:has([data-pf-error-visible])) {
+  display: none;
+}
+
+wa-callout:has(> [data-pf-error-container] > ul > li:not([data-pf-error-visible])) {
+  display: none;
+}
+
+wa-callout:not(:has(> [data-pf-fallback-error-section])){
+  &:has(> [data-pf-error-container] > ul > li[data-pf-error-visible]:only-child) {
+    [data-pf-field-multiple-errors-blurb] {
+      display: none;
+    }
+
+    [data-pf-error-container] > ul {
+      list-style: none;
+      margin-inline-start: 0;
+
+      > li {
+        font-weight: unset;
+      }
+    }
+  }
+}
