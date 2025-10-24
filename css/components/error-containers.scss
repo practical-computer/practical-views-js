@@ -18,9 +18,9 @@ wa-callout:not(:has(> [data-pf-fallback-error-section])){
 
     [data-pf-error-container] > ul {
       list-style: none;
-      margin-inline-start: 0;
 
       > li {
+        margin-inline-start: 0;
         font-weight: unset;
       }
     }
