@@ -20,7 +20,11 @@ class SubmitWithSelectedMenuItemElement extends HTMLElement {
   }
 
   get form() {
-    return this.querySelector(`:scope form`)
+    if(this.hasAttribute(`form`)) {
+      return document.getElementById(this.getAttribute(`form`))
+    } else {
+      return this.querySelector(`:scope form`)
+    }
   }
 }
 
