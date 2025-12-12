@@ -1,6 +1,6 @@
 {
   "name": "@practical-computer/practical-views",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "description": "The JS code for the view layer of the Practical Framework",
   "exports": {
     "./elements/auto-expire": "./src/elements/auto-expire.js",

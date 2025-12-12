@@ -2,8 +2,9 @@ const menuItemSelectedEvent = async function(event) {
   const dropdownElement = event.currentTarget
   const menuElement = event.target
   const value = event.detail.item.value
+  const name = event.target.dataset.fieldName
 
-  dropdownElement.form.elements[event.target.dataset.fieldName].value = value
+  dropdownElement.form.elements[name].value = value
   dropdownElement.form.requestSubmit()
 }
 
@@ -19,11 +20,16 @@ class SubmitWithSelectedMenuItemElement extends HTMLElement {
   }
 
   get form() {
-    return this.querySelector(`:scope form`)
+    if(this.hasAttribute(`form`)) {
+      return document.getElementById(this.getAttribute(`form`))
+    } else {
+      return this.querySelector(`:scope form`)
+    }
   }
-
 }
 
 if (!window.customElements.get('submit-with-selected-menu-item')) {
-  window.customElements.define('submit-with-selected-menu-item', SubmitWithSelectedMenuItemElement);
+  window.customElements.define('submit-with-selected-menu-item',
+    SubmitWithSelectedMenuItemElement
+  );
 }
